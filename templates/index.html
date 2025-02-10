@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truth or Dare</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Truth or Dare</h1>
+        <form action="/start" method="post">
+            <div class="form-group">
+                <label for="player1">Player 1 Name:</label>
+                <input type="text" id="player1" name="player1" required>
+                <label for="gender1">Gender:</label>
+                <select id="gender1" name="gender1" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="player2">Player 2 Name:</label>
+                <input type="text" id="player2" name="player2" required>
+                <label for="gender2">Gender:</label>
+                <select id="gender2" name="gender2" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="difficulty">Difficulty:</label>
+                <select id="difficulty" name="difficulty_level" required>
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+            <button type="submit">Start Game</button>
+        </form>
+    </div>
+</body>
+</html>

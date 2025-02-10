@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truth or Dare</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Truth or Dare</h1>
+        <h2 class="player-name" id="player-name">{{ player.name }}, it's your turn!</h2>
+        <form id="game-form">
+            <button type="button" onclick="play('truth')">Truth</button>
+            <button type="button" onclick="play('dare')">Dare</button>
+        </form>
+        <div id="question" class="question"></div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
